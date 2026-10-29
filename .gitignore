@@ -1,0 +1,56 @@
+# Code Composer Studio / Eclipse generated outputs
+Debug/
+Release/
+**/Debug/
+**/Release/
+.settings/
+.metadata/
+*.out
+*.elf
+*.map
+*.hex
+*.bin
+*.obj
+*.o
+*.d
+*.dep
+*.log
+
+# Keep source and CCS project metadata (.project, .cproject, .ccsproject)
+# Private/local workspace settings
+*.launch
+*.user
+*.tmp
+*.bak
+*.swp
+*~
+
+# OS / editors
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Native CAD working files (publish only intentionally selected STL exports)
+*.SLDPRT
+*.SLDASM
+*.SLDDRW
+*.sldprt
+*.sldasm
+*.slddrw
+*.STEP
+*.STP
+*.step
+*.stp
+*.f3d
+*.f3z
+
+# Python caches, if tooling is added
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+
+# Vendor-supplied startup source (retain locally)
+**/tm4c123gh6pm_startup_ccs.c
