@@ -1,15 +1,11 @@
 <div align="center">
 
-# 🦾 Joystick-Controlled Mechanical Claw Arm
+# Joystick-Controlled Mechanical Claw Arm
 
 **TM4C123GXL Tiva C · Embedded C · ADC · Hardware PWM · GPIO Interrupts · SysTick · UART · ESP32 · SolidWorks · 3D Printing**
 
 A real-time embedded-control and mechatronic integration project featuring a four-servo mechanical claw arm, single-joystick operation, a custom 3D-printed controller enclosure, and command-based graphical feedback.
 
-[![Project](https://img.shields.io/badge/Project-SFU_MSE_450-2563EB?style=for-the-badge)](#project-overview)
-[![Embedded](https://img.shields.io/badge/Embedded-TM4C123GXL-0F766E?style=for-the-badge)](#embedded-control)
-[![CAD](https://img.shields.io/badge/Design-SolidWorks_%26_3D_Printing-EF4444?style=for-the-badge)](#mechanical-design--fabrication)
-[![Portfolio](https://img.shields.io/badge/Engineering_Portfolio-Visit-7C3AED?style=for-the-badge)](https://hasanfairuz.com/)
 
 </div>
 
@@ -101,7 +97,7 @@ This is a **command mapping**, not verified physical joint-angle measurement or 
 
 **Explore:** [`firmware/tiva-c/direct-st7789-v2.2/`](firmware/tiva-c/direct-st7789-v2.2/) · [Embedded Control Notes](docs/EMBEDDED_CONTROL.md)
 
-The `ccs-project/` subfolder preserves available Code Composer Studio project metadata, linker configuration, and TI startup file. It is **archival**: source paths, toolchain prerequisites, TivaWare dependencies, and successful import/build have **not been independently verified** in this rearranged repository structure. Third-party notices and usage restrictions remain applicable.
+The `ccs-project/` subfolder preserves available Code Composer Studio project metadata and linker configuration. The vendor-supplied TI startup source is retained locally but excluded from this public repository. It is **archival**: source paths, toolchain prerequisites, TivaWare dependencies, and successful import/build have **not been independently verified** in this rearranged repository structure. Third-party notices and usage restrictions remain applicable.
 
 ## Mechanical Design & Fabrication
 
@@ -183,8 +179,7 @@ joystick-controlled-claw-arm/
 │   │       ├── display.c
 │   │       ├── display.h
 │   │       ├── README_v2.2.txt
-│   │       └── ccs-project/        # Archived CCS metadata/startup/linker files
-│   └── esp32-display/             # Final firmware not available (not populated)
+│   │       └── ccs-project/        # Archived CCS metadata and linker file
 └── media/
     ├── Claw Arm - Isometric.jpg
     ├── Claw Arm - Side View.jpg
@@ -193,7 +188,7 @@ joystick-controlled-claw-arm/
     └── Joystick Interface - Assembled.jpg
 ```
 
-> The documentation files listed under `docs/` are part of the planned published repository and must be added before the initial GitHub commit. Git does not track empty directories, so `esp32-display/` may not appear on GitHub until it contains a file.
+> The final ESP32 display source was not recovered and is not included. The TI startup source is excluded from version control and retained only in the local development archive.
 
 ## Technical Documentation
 
@@ -211,14 +206,10 @@ This was a **team project** for **SFU MSE 450: Real-Time and Embedded Control Sy
 
 The public repository is a curated portfolio record, **not a turnkey, independently verified build**. The full project report is not reproduced here because it contains student identifiers. The available v2.2 source corresponds to an **earlier display revision**, and the final UART/ESP32 firmware was not recovered.
 
-The Tiva C project relies on the external **TI TivaWare/Code Composer Studio** toolchain. Certain startup and support files originate from Texas Instruments and carry their own license terms; their inclusion does not imply that all project files are available under a single open-source license. The robot-arm geometry may also have upstream design provenance that should be checked before redistribution or reuse.
+The Tiva C project relies on the external **TI TivaWare/Code Composer Studio** toolchain. The vendor startup source is not included in the public repository; external TI libraries and tooling remain subject to their applicable license terms. Public availability of this repository does not itself grant a blanket reuse license. The robot-arm geometry may also have upstream design provenance that should be checked before redistribution or reuse.
 
 ## Portfolio
 
 **Hasan Fairuz** — Mechatronic Systems Engineering
 
 [Engineering Portfolio](https://hasanfairuz.com/) · [GitHub Profile](https://github.com/HasanFairuz)
-
----
-
-<div align="center"><sub>Embedded control · Hardware/software integration · Servo actuation · 3D printing · Engineering troubleshooting</sub></div>
